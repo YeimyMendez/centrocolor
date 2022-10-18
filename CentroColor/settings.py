@@ -98,10 +98,10 @@ WSGI_APPLICATION = 'CentroColor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ddb459opovvg6t',
-        'USER': 'hlqgocgvzrsyxi',
-        'PASSWORD': '7f8b31017dfe318e597224a9c1041692bbdeaa319f0dccfc698087cf11e83fca',
-        'HOST': 'ec2-52-200-5-135.compute-1.amazonaws.com',
+        'NAME': 'd61ai98csvm0lf',
+        'USER': 'qtltvtzfyurfug',
+        'PASSWORD': '5cfbcd76bf610c3733a744f2241ddf872fc2bc5501316f60b021562044696ad5',
+        'HOST': 'ec2-44-209-24-62.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
