@@ -1,9 +1,8 @@
 from importlib.resources import path
-from os import rename
 import os
 import pathlib
 from pickle import NONE
-from tkinter import image_names
+
 from urllib import request
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest
