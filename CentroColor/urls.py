@@ -25,7 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',inicio,name = 'Inicio'), 
     path('',include('principal.urls')),
-    path('',include('webservices.urls')),
+    path('webservices/',include('webservices.urls')),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
