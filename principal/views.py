@@ -2,7 +2,7 @@ from importlib.resources import path
 import os
 import pathlib
 from pickle import NONE
-from os.path import tkinter
+# from os.path import tkinter
 
 from urllib import request
 from django.shortcuts import render

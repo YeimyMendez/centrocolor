@@ -7,9 +7,9 @@ from django import forms
 
 
 class FormularioUniversal(forms.ModelForm):
-	nombre                    = forms.CharField(max_length=75, label="Nombres")
-	apellido                  = forms.CharField(max_length=75, label="Apellidos")
-	documento                 = forms.CharField(max_length=12, label="Documento de identidad")
+	nombre                    = forms.CharField(max_length=75)
+	apellido                  = forms.CharField(max_length=75)
+	documento                 = forms.CharField(max_length=12)
 		
 	class Meta:
 		model = Universal

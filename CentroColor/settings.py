@@ -27,10 +27,10 @@ SECRET_KEY = 'django-insecure-k4@-0kge7rqv68)6qv4p)4y3%@h9z^hcrul3opgae3p#=&g_x)
 DEBUG = True
 
 # LOCAL
-# ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 
 # HEROKU
-ALLOWED_HOSTS = ['centrocolor.herokuapp.com']
+# ALLOWED_HOSTS = ['centrocolor.herokuapp.com']
 
 # Application definition
 
@@ -87,24 +87,24 @@ WSGI_APPLICATION = 'CentroColor.wsgi.application'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 # # LOCAL
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
-#HEROKU
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd61ai98csvm0lf',
-        'USER': 'qtltvtzfyurfug',
-        'PASSWORD': '5cfbcd76bf610c3733a744f2241ddf872fc2bc5501316f60b021562044696ad5',
-        'HOST': 'ec2-44-209-24-62.compute-1.amazonaws.com',
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+#HEROKU
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'd61ai98csvm0lf',
+#         'USER': 'qtltvtzfyurfug',
+#         'PASSWORD': '5cfbcd76bf610c3733a744f2241ddf872fc2bc5501316f60b021562044696ad5',
+#         'HOST': 'ec2-44-209-24-62.compute-1.amazonaws.com',
+#         'PORT': '5432',
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -144,13 +144,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 #ESTATIC PRUEBA LOCAL
-# STATIC_URL = '/static/'
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, 'principal/static'),)
-# STATIC_ROOT = '/principal/static'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'principal/static'),)
+STATIC_ROOT = '/principal/static'
 
 # HEROKU
-STATIC_URL = '/static/'
-STATIC_ROOT = "static"
+# STATIC_URL = '/static/'
+# STATIC_ROOT = "static"
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
